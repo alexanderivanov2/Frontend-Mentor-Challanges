@@ -1,14 +1,25 @@
 import styles from './ProductPreviewCard.module.scss';
 import parfumeMobileIMG from './img/image-product-mobile.jpg';
+import parfumeDesktopIMG from './img/image-product-desktop.jpg';
 import svgShopingCart from './img/icon-cart.svg';
+import { useEffect, useState } from 'react';
 
-function ProductPreviewCard() {
+function ProductPreviewCard({screenWidth}) {
+    const [device, setDevice] = useState('');
+
+    useEffect(() => {
+        if (screenWidth < 675) {
+            setDevice('mobile') 
+        } else {
+            setDevice('desktop');
+        }
+    }, [screenWidth]);
     return (
         <section className={styles.productPreview}>
 
             <article className={styles.productPreview__card}>
-                <div className={styles.productPreviewCard__card__imgBox}>
-                    <img className={styles.productPreview__card__imgBox__img} src={parfumeMobileIMG} alt="Parfume IMG"/>
+                <div className={styles.productPreview__card__imgBox}>
+                    <img className={styles.productPreview__card__imgBox__img} src={device === 'mobile' ? parfumeMobileIMG : parfumeDesktopIMG} alt="Parfume IMG"/>
                 </div>
                 <div className={styles.productPreview__card__info}>
                     <h3 className={styles.productPreview__card__info__type}>PERFUME</h3>

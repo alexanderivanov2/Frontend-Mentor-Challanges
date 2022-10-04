@@ -1,0 +1,48 @@
+*, *::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.headerNavigation {
+  background-color: lightblue;
+  color: white;
+  padding: 1rem 0;
+}
+.headerNavigation__box {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerNavigation__titleBox {
+  font-size: 1.2rem;
+  width: 30%;
+}
+.headerNavigation__navigationBox {
+  width: 50%;
+}
+.headerNavigation__navigation {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.headerNavigation__navigation__item {
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.headerNavigation__navigation__item a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+}
+.headerNavigation__navigation__item .active {
+  color: red;
+}
+.headerNavigation__navigation__item a:hover {
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+}/*# sourceMappingURL=Header.module.css.map */
