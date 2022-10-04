@@ -110,7 +110,7 @@ body {
   .productPreview__card {
     margin: 0;
     width: 600px;
-    height: 430px;
+    height: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -134,7 +134,7 @@ body {
     padding: 2rem;
     width: 50%;
     margin: 0;
-    padding: 2rem 1rem 0rem;
+    padding: 2rem 1.75rem 0rem;
   }
   .productPreview__card__info__title {
     font-size: 2.2rem;
