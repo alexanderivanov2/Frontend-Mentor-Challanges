@@ -1,0 +1,61 @@
+@import 'variables';
+
+*, *::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.headerNavigation {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 1rem 0;
+
+    &__box {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__titleBox {
+        font-size: 1.2rem;
+        width: 30%;
+    }
+
+    &__navigationBox {
+        width: 50%;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+
+        &__item {
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            
+            a {
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                color: $secondary-color;
+            }
+
+            .active {
+                color: red;
+            }
+
+            a:hover {
+                border-radius: 5px;
+                color: black;
+                background-color: $secondary-color;
+            }
+        }
+
+        
+    }
+}
+
