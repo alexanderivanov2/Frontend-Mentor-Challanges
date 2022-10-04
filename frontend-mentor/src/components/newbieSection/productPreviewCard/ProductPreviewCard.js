@@ -31,11 +31,12 @@ function ProductPreviewCard({screenWidth}) {
                 </div>
             </article>
 
-            {/* <div class="attribution">
+            <div className={styles.attribution}>
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="#">Alexander Ivanov</a>.
-            </div> */}
+            </div>
         </section>
+        
     );
 }
 
