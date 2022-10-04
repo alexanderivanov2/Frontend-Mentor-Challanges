@@ -9,10 +9,7 @@ body {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%);
+  text-align: center;
 }
 
 .productPreview {
@@ -101,6 +98,12 @@ body {
 }
 
 @media screen and (min-width: 675px) {
+  .attribution {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+  }
   .productPreview {
     position: relative;
   }
