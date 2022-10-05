@@ -1,3 +1,11 @@
 .newbieSection {
   padding: 5%;
+}
+
+@media screen and (min-width: 1400px) {
+  .newbieSection {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=NewbieSection.module.css.map */

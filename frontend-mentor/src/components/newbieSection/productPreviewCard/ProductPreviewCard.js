@@ -14,6 +14,7 @@ function ProductPreviewCard({screenWidth}) {
             setDevice('desktop');
         }
     }, [screenWidth]);
+    
     return (
         <section className={styles.productPreview}>
 

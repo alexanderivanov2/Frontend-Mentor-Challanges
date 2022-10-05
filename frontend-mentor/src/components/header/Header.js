@@ -7,7 +7,6 @@ function Header({screenWidth}) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
-        console.log(screenWidth);
         if (screenWidth < 675) {
             setDevice('mobile');
         } else {
