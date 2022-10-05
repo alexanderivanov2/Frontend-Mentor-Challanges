@@ -10,6 +10,7 @@ body {
 
 .attribution {
   text-align: center;
+  background-color: hsl(30deg, 38%, 92%);
 }
 
 .productPreview {
