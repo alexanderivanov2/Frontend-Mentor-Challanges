@@ -14,7 +14,7 @@ function ProductPreviewCard({screenWidth}) {
             setDevice('desktop');
         }
     }, [screenWidth]);
-    
+
     return (
         <section className={styles.productPreview}>
 
@@ -33,8 +33,8 @@ function ProductPreviewCard({screenWidth}) {
             </article>
 
             <div className={styles.attribution}>
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Alexander Ivanov</a>.
+                <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="#">Alexander Ivanov</a>.</p>
             </div>
         </section>
         
