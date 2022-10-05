@@ -6,15 +6,15 @@ import NewbieSection from "./components/newbieSection/NewbieSection";
 import ProductPreviewCard from "./components/newbieSection/productPreviewCard/ProductPreviewCard";
 
 function App() {
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-    
+    const [screenWidth, setScreenWidth] = useState(window.screen.width);
+
     useEffect(() => {
         window.addEventListener('resize', (e) => {
-            setScreenWidth(window.innerWidth);
+            setScreenWidth(window.screen.width);
         });
 
         return window.removeEventListener('resize', this);
-    }, [window.innerWidth]);
+    }, [window.screen.width]);
 
 
     return (

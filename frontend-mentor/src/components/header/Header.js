@@ -7,6 +7,7 @@ function Header({screenWidth}) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
+        console.log(screenWidth);
         if (screenWidth < 675) {
             setDevice('mobile');
         } else {
@@ -15,7 +16,6 @@ function Header({screenWidth}) {
     }, [screenWidth])
     
     const onBurgerMenuClick = (e) => {
-        console.log(window.screen.width);
         const result = menuOpen ? false : true;
         setMenuOpen(result);
     }

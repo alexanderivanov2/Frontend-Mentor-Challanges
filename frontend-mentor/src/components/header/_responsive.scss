@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) and (max-width: 999px){
+@media screen and (min-width: 500px) and (max-width: 999px){
     .navigationBar {
 
         // &__titleBox {
@@ -8,6 +8,7 @@
         &__burger {
             background-color: red;
             border: 3px solid orange;
+            width: 7%;
         }
     }
 }
@@ -21,12 +22,16 @@
     }
 }
 
-// @media (min-width: 1900px) {
-//     .navigationBar {
-//         &__burger {
-//             background-color: orange;
-//             border: 3px solid red;
-//             // width: 2%;
-//         }
-//     }
-// }
+@media (min-width: 1400px) {
+    .headerNavigation {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .navigationBar {
+        &__burger {
+            background-color: orange;
+            border: 3px solid red;
+            // width: 2%;
+        }
+    }
+}
