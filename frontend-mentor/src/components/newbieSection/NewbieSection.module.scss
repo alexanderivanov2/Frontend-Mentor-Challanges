@@ -48,7 +48,7 @@
 @media screen and (min-width: 675px) {
     .newbieSection {
         padding: 0;
-        width: 95%;
+        // width: 95%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -57,5 +57,21 @@
         &__project {
             width: 40%;
         }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .newbieSection {
+
+        &__project {
+            width: 30%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    .newbieSection {
+        width: 80%;
     }
 }
