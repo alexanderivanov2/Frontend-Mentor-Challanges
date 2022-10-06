@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from './NewbieSection.module.scss';
 import productPreviewCardIMG from './img/productPreviewCard.png';
+import qrCodeComponent from './img/qrCodeComponent.png';
 
 function NewbieSection() {
     return (
@@ -17,7 +18,7 @@ function NewbieSection() {
                     </article>
                     <article className={styles.newbieSection__project}>
                         <div className={styles.newbieSection__project__imgDiv}>
-                            <img src={productPreviewCardIMG} alt="QR code component"/>
+                            <img src={qrCodeComponent} alt="QR code component"/>
                         </div>
                         <h2 className={styles.newbieSection__project__title}>QR Code Component</h2>
 
