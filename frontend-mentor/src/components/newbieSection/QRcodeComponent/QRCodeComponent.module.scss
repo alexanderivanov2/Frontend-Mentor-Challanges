@@ -1,0 +1,140 @@
+@import 'variables';
+
+@mixin roundBorderCorners($size) {
+    border-radius: $size;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin redborder {
+    border: 3px solid red;
+}
+
+body {
+    background-color: $light-gray;
+}
+
+.QRCodeComponent {
+    width: 90%;
+    margin: 1em auto 0;
+    background-color: $white;
+    padding: 5%;
+    @include roundBorderCorners(25px);
+
+    &__box__imgDiv {
+        width: 100%;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            @include roundBorderCorners(10px);
+        }
+    }
+
+
+    &__box__info {
+        // @include redborder();
+        padding: 5% 0;
+
+        &__title {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 5%;
+            color: $dark-blue;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 2rem;
+            text-align: center;
+        }
+
+        &__description {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+            font-size: $font-size-paragraph;
+            color: $grayish-blue;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 330px) {
+    .QRCodeComponent__box__info__title {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .QRCodeComponent__box__info__title {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .QRCodeComponent {
+        width: 40%;
+        padding: 2%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &__box__info {
+            // @include redborder();
+            padding: 5% 0;
+    
+            &__title {
+                font-size: 0.90rem;
+                line-height: 1rem;
+
+            }
+    
+            &__description {
+                font-size: 0.80rem;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                line-height: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .QRCodeComponent {
+        width: 30%;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .QRCodeComponent {
+        width: 300px;
+        padding: 1.5%;
+
+        &__box__info {
+            padding: 5% 0;
+    
+            &__title {
+                font-size: 1rem;
+                line-height: 1.5rem;
+
+            }
+    
+            &__description {
+                font-size: 0.90rem;
+                color: $grayish-blue;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                line-height: 1rem;
+            }
+        }
+    }
+
+   
+}
