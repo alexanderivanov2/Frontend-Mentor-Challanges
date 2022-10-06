@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/header/Header";
 import NewbieSection from "./components/newbieSection/NewbieSection";
 import ProductPreviewCard from "./components/newbieSection/productPreviewCard/ProductPreviewCard";
+import QRCodeComponent from "./components/newbieSection/QRcodeComponent/QRCodeComponent";
 
 function App() {
     const [screenWidth, setScreenWidth] = useState(window.screen.width);
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/" element={<NewbieSection screenWidth={screenWidth}/>}/>
                 <Route path='/newbie' element={<NewbieSection screenWidth={screenWidth}/>}/>
                 <Route path='/newbie/project-one' element={<ProductPreviewCard screenWidth={screenWidth}/>}/>
+                <Route path='/newbie/qr-code-component' element={<QRCodeComponent screenWidth={screenWidth}/>}/>
             </Routes>
         </BrowserRouter>
     );
