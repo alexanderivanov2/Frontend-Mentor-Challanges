@@ -1,20 +1,21 @@
-@media screen and (min-width: 500px) and (max-width: 999px){
+@media screen and (min-width: 500px) {
     .navigationBar {
-
         &__titleBox {
-            width: 20%;
+            width: 70px;
+            aspect-ratio: 1/1;
+            font-size: 1rem;
         }
 
         &__burger {
-            width: 7%;
+            width: 70px;
         }
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 675px) {
     .navigationBar {
-        &__burger {
-            width: 5%;
+        &__titleBox {
+            font-size: 7px;
         }
     }
 }

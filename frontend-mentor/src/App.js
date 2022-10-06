@@ -25,7 +25,7 @@ function App() {
                 <Route path="/" element={<NewbieSection screenWidth={screenWidth}/>}/>
                 <Route path='/newbie' element={<NewbieSection screenWidth={screenWidth}/>}/>
                 <Route path='/newbie/project-one' element={<ProductPreviewCard screenWidth={screenWidth}/>}/>
-                <Route path='/newbie/qr-code-component' element={<QRCodeComponent screenWidth={screenWidth}/>}/>
+                <Route path='/newbie/qr-code-component' element={<QRCodeComponent/>}/>
             </Routes>
         </BrowserRouter>
     );

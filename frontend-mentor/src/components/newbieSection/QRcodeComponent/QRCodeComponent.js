@@ -1,7 +1,7 @@
 import styles from './QRCodeComponent.module.scss';
 import QRimg from './img/image-qr-code.png';
 
-function QRCodeComponent({screenWidth}) {
+function QRCodeComponent() {
     return (
         <>
             <section className={styles.QRCodeComponent}>
