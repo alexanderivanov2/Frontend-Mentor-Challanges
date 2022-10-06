@@ -1,5 +1,41 @@
 .newbieSection {
     padding: 5%;
+
+    &__project {
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        background-color: lightblue;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        &__imgDiv {
+            width: 100%;
+            aspect-ratio: 1/1;
+            // border-top: 2px solid lightblue;
+            // border-left: 2px solid lightblue;
+            // border-right: 2px solid lightblue;
+            img {
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
+        }
+        
+        &__title {
+            text-align: center;
+        }
+
+        &__link {
+            color: lightblue;
+            text-decoration: none;
+            background-color: white;
+            padding: 0.5em 1em;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
 }
 
 
