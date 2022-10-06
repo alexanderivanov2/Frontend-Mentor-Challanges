@@ -1,11 +1,16 @@
+@mixin roundTopBorders {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .newbieSection {
     padding: 5%;
 
     &__project {
         width: 80%;
-        margin: 0 auto;
+        margin: 1em auto 0;
         border: 2px solid lightblue;
-        border-radius: 5px;
+        @include roundTopBorders();
         background-color: lightblue;
         color: white;
         display: flex;
@@ -14,12 +19,12 @@
         &__imgDiv {
             width: 100%;
             aspect-ratio: 1/1;
-            // border-top: 2px solid lightblue;
-            // border-left: 2px solid lightblue;
-            // border-right: 2px solid lightblue;
+            @include roundTopBorders();
+
             img {
                 width: 100%;
                 aspect-ratio: 1/1;
+                @include roundTopBorders();
             }
         }
         
@@ -34,15 +39,23 @@
             padding: 0.5em 1em;
             text-align: center;
             margin-top: 1rem;
+            @include roundTopBorders();
         }
     }
 }
 
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 675px) {
     .newbieSection {
         padding: 0;
-        width: 80%;
+        width: 95%;
         margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &__project {
+            width: 40%;
+        }
     }
 }

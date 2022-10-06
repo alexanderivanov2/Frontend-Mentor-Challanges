@@ -15,8 +15,25 @@ function NewbieSection() {
                         <Link to='/newbie/project-one'
                         className={styles.newbieSection__project__link}>Go To Project</Link>
                     </article>
+                    <article className={styles.newbieSection__project}>
+                        <div className={styles.newbieSection__project__imgDiv}>
+                            <img src={productPreviewCardIMG} alt="product preview card"/>
+                        </div>
+                        <h2 className={styles.newbieSection__project__title}>Product Preview Card</h2>
+
+                        <Link to='/newbie/project-one'
+                        className={styles.newbieSection__project__link}>Go To Project</Link>
+                    </article>
+                    <article className={styles.newbieSection__project}>
+                        <div className={styles.newbieSection__project__imgDiv}>
+                            <img src={productPreviewCardIMG} alt="product preview card"/>
+                        </div>
+                        <h2 className={styles.newbieSection__project__title}>Product Preview Card</h2>
+
+                        <Link to='/newbie/project-one'
+                        className={styles.newbieSection__project__link}>Go To Project</Link>
+                    </article>
             </section>
-            
         </>
     )
 }
