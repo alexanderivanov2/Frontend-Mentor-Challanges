@@ -43,16 +43,17 @@
   background-color: lightblue;
   color: white;
   border-radius: 50%;
-  width: 15%;
+  width: 50px;
+  aspect-ratio: 1/1;
   overflow: hidden;
-  font-size: 0.5em;
+  font-size: 0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .navigationBar__burger {
-  width: 10%;
+  width: 50px;
   aspect-ratio: 1/1;
   background-color: lightblue;
   border-radius: 5px;
@@ -76,17 +77,19 @@
   width: 50%;
 }
 
-@media screen and (min-width: 500px) and (max-width: 999px) {
+@media screen and (min-width: 500px) {
   .navigationBar__titleBox {
-    width: 20%;
+    width: 70px;
+    aspect-ratio: 1/1;
+    font-size: 1rem;
   }
   .navigationBar__burger {
-    width: 7%;
+    width: 70px;
   }
 }
-@media screen and (min-width: 1000px) {
-  .navigationBar__burger {
-    width: 5%;
+@media screen and (min-width: 675px) {
+  .navigationBar__titleBox {
+    font-size: 7px;
   }
 }
 @media (min-width: 1400px) {

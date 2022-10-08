@@ -1,11 +1,62 @@
 .newbieSection {
   padding: 5%;
 }
+.newbieSection__project {
+  width: 80%;
+  margin: 1em auto 0;
+  border: 2px solid lightblue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: lightblue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.newbieSection__project__imgDiv {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.newbieSection__project__imgDiv img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.newbieSection__project__title {
+  text-align: center;
+}
+.newbieSection__project__link {
+  color: lightblue;
+  text-decoration: none;
+  background-color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+  margin-top: 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 675px) {
   .newbieSection {
     padding: 0;
-    width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .newbieSection__project {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .newbieSection__project {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .newbieSection {
+    width: 80%;
   }
 }/*# sourceMappingURL=NewbieSection.module.css.map */

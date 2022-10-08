@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Overpass;
+}
+
+.interactiveRating {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
+  padding: 25% 7%;
+}
+.interactiveRating__box {
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 15px;
+  padding: 8% 5%;
+}
+.interactiveRating__box__icon {
+  padding: 1rem;
+  background-color: #303a46;
+  border-radius: 50%;
+}
+.interactiveRating__box__icon__rating {
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem;
+}
+.interactiveRating__box__rateBox {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.interactiveRating__box__rateBox__rate {
+  background-color: #303a46;
+  color: hsl(25deg, 97%, 53%);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.interactiveRating__box__title {
+  color: hsl(0deg, 0%, 100%);
+  padding: 1rem 0;
+}
+.interactiveRating__box__title__rating {
+  color: hsl(0deg, 0%, 100%);
+  padding: 1rem 0;
+  text-align: center;
+}
+.interactiveRating__box__text {
+  color: hsl(216deg, 12%, 54%);
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+}
+.interactiveRating__box__text__rating {
+  color: hsl(216deg, 12%, 54%);
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.interactiveRating__box__ratingsBox {
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.interactiveRating__box__ratingsBox__rating {
+  background-color: #363c45;
+  color: hsl(216deg, 12%, 54%);
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.interactiveRating__box__ratingsBox__rating:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+.interactiveRating__box__ratingsBox__rating__selected, .interactiveRating__box__ratingsBox__rating__selected:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 12%, 63%);
+}
+.interactiveRating__box__submit {
+  width: 100%;
+  padding: 1rem;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 0.25rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.interactiveRating__box__submit:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+@media screen and (min-width: 475px) {
+  .interactiveRating {
+    position: relative;
+  }
+  .interactiveRating__box {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem 2rem 2rem;
+  }
+}/*# sourceMappingURL=InteractiveRatingComponent.module.css.map */

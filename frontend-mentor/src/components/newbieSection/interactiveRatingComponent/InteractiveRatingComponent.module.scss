@@ -1,7 +1,142 @@
-.interactiveRating__box__ratingsBox__rating {
-    color: red;
+@import 'values';
 
-    &__selected {
-        color: blue;
+@mixin redborder {
+    border: 3px solid red;
+}
+
+@mixin makeCircleBorder {
+    border-radius: 50%;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-family-overpass;
+}
+
+.interactiveRating {
+    width: 100%;
+    height: 100vh;
+    background-color: $neutral-Very-Dark-Blue;
+
+    padding: 25% 7%;
+
+    &__box {
+        background-color: $neutral-Dark-Blue;
+        border-radius: 15px;
+        padding: 8% 5%;
+
+        &__icon {
+            padding: 1rem;
+            background-color: lighten($neutral-Dark-Blue, 5%);
+            @include makeCircleBorder();
+        }
+
+        &__icon__rating {
+            margin: 0 auto;
+            display: flex;
+            padding: 2rem;
+        }
+
+        &__rateBox {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 1rem;
+            &__rate {
+                background-color: lighten($neutral-Dark-Blue, 5%);
+                color: $primary-color;
+                padding: 0.5rem 1rem;
+                border-radius: 20px;
+            }
+        }
+
+        &__title {
+            color: $neutral-White;
+            padding: 1rem 0;
+        }
+
+        &__title__rating {
+            color: $neutral-White;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        &__text {
+            color: $neutral-Medium-Grey;
+            padding-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        &__text__rating {
+            color: $neutral-Medium-Grey;
+            padding-bottom: 1.5rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        &__ratingsBox {
+            padding-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-around;
+
+            &__rating {
+                background-color: darken($neutral-Medium-Grey, 30%);
+                color: $neutral-Medium-Grey;
+                font-weight: 700;
+                padding: 1rem;
+                @include makeCircleBorder();
+
+                &:hover {
+                    background-color: $primary-color;
+                    color: $neutral-White;
+                    cursor: pointer;
+                }
+                
+            
+                &__selected, &__selected:hover {
+                    color: $neutral-White;
+                    background-color: $neutral-Light-Grey;
+                }
+            }
+        }
+
+        &__submit {
+            width: 100%;
+            padding: 1rem;
+            background-color: $primary-color;
+            color: $neutral-White;
+            letter-spacing: 0.25rem;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: $neutral-White;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 475px) {
+    .interactiveRating {
+        position: relative;
+    }
+
+    .interactiveRating__box {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 1.5rem 2rem 2rem;
     }
 }
