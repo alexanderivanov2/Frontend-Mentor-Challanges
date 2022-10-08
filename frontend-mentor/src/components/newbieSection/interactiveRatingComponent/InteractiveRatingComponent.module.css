@@ -16,7 +16,7 @@ body {
   padding: 25% 7%;
 }
 .interactiveRating__box {
-  background-color: hsl(213deg, 19%, 18%);
+  background: -webkit-radial-gradient(top, hsl(213deg, 19%, 18%), #191b1f);
   border-radius: 15px;
   padding: 8% 5%;
 }
@@ -67,12 +67,14 @@ body {
 .interactiveRating__box__ratingsBox {
   padding-bottom: 1.5rem;
   display: flex;
-  justify-content: space-around;
+  gap: 5%;
 }
 .interactiveRating__box__ratingsBox__rating {
   background-color: #363c45;
   color: hsl(216deg, 12%, 54%);
   font-weight: 700;
+  text-align: center;
+  width: 15%;
   padding: 1rem;
   border-radius: 50%;
 }
@@ -90,6 +92,7 @@ body {
   padding: 1rem;
   background-color: hsl(25deg, 97%, 53%);
   color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
   letter-spacing: 0.25rem;
   border: none;
   border-radius: 20px;

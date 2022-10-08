@@ -26,7 +26,8 @@ body {
     padding: 25% 7%;
 
     &__box {
-        background-color: $neutral-Dark-Blue;
+        // background-color: $neutral-Dark-Blue;
+        background: -webkit-radial-gradient(top, $neutral-Dark-Blue, lighten($neutral-Very-Dark-Blue, 3%));
         border-radius: 15px;
         padding: 8% 5%;
 
@@ -84,12 +85,14 @@ body {
         &__ratingsBox {
             padding-bottom: 1.5rem;
             display: flex;
-            justify-content: space-around;
+            gap: 5%;
 
             &__rating {
                 background-color: darken($neutral-Medium-Grey, 30%);
                 color: $neutral-Medium-Grey;
                 font-weight: 700;
+                text-align: center;
+                width: 15%;
                 padding: 1rem;
                 @include makeCircleBorder();
 
@@ -112,6 +115,7 @@ body {
             padding: 1rem;
             background-color: $primary-color;
             color: $neutral-White;
+            font-weight: 700;
             letter-spacing: 0.25rem;
             border: none;
             border-radius: 20px;
