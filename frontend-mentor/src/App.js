@@ -27,7 +27,7 @@ function App() {
                 <Route path='/newbie' element={<NewbieSection screenWidth={screenWidth}/>}/>
                 <Route path='/newbie/project-one' element={<ProductPreviewCard screenWidth={screenWidth}/>}/>
                 <Route path='/newbie/qr-code-component' element={<QRCodeComponent/>}/>
-                <Route path='/newbie/interactiove-rating-component' element={<InteractiveRatingComponent/>}/>
+                <Route path='/newbie/interactive-rating-component' element={<InteractiveRatingComponent/>}/>
             </Routes>
         </BrowserRouter>
     );
