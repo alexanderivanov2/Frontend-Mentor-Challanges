@@ -139,4 +139,19 @@ body {
         transform: translate(-50%, -50%);
         padding: 1.5rem 2rem 2rem;
     }
+
+    .interactiveRating__box__icon__rating {
+        padding: 1rem;
+    }
+
+    .interactiveRating__box__text__rating {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .interactiveRating {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
