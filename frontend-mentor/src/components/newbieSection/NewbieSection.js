@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styles from './NewbieSection.module.scss';
 import productPreviewCardIMG from './img/productPreviewCard.png';
 import qrCodeComponent from './img/qrCodeComponent.png';
+import interactiveRatingIMG from './img/interactive-rating-component.png';
 
 function NewbieSection() {
     return (
@@ -9,7 +10,7 @@ function NewbieSection() {
             <section className={styles.newbieSection}>
                     <article className={styles.newbieSection__project}>
                         <div className={styles.newbieSection__project__imgDiv}>
-                            <img src={productPreviewCardIMG} alt="product preview card"/>
+                            <img src={interactiveRatingIMG} alt="product preview card"/>
                         </div>
                         <h2 className={styles.newbieSection__project__title}>Interactive Ratign Component</h2>
 
