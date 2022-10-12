@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;800&display=swap');
+
+$primary-soft-blue: hsl(215, 51%, 70%);
+$primary-Cyan: hsl(178, 100%, 50%);
+$neutral-Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+$neutral-Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+$neutral-Very-dark-blue-line: hsl(215, 32%, 27%);
+$neutral-White: hsl(0, 0%, 100%);
+
+$font-size: 18px;
+$font-family: 'Outfit', sans-serif; 
+
+@function getFontWeight($type) {
+    @if ($type == 'low') {
+        @return 300;
+    } @else if ($type == 'medium') {
+        @return 400;
+    } @else {
+        @return 800;
+    }
+}

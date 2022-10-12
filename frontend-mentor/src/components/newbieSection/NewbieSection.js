@@ -14,6 +14,15 @@ function NewbieSection() {
                         </div>
                         <h2 className={styles.newbieSection__project__title}>Interactive Ratign Component</h2>
 
+                        <Link to='/newbie/ntf-preview-card'
+                        className={styles.newbieSection__project__link}>Go To Project</Link>
+                    </article>
+                    <article className={styles.newbieSection__project}>
+                        <div className={styles.newbieSection__project__imgDiv}>
+                            <img src={interactiveRatingIMG} alt="product preview card"/>
+                        </div>
+                        <h2 className={styles.newbieSection__project__title}>Interactive Ratign Component</h2>
+
                         <Link to='/newbie/interactive-rating-component'
                         className={styles.newbieSection__project__link}>Go To Project</Link>
                     </article>

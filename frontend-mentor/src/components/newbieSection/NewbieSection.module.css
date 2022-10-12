@@ -5,8 +5,7 @@
   width: 80%;
   margin: 1em auto 0;
   border: 2px solid lightblue;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
   background-color: lightblue;
   color: white;
   display: flex;
@@ -26,6 +25,7 @@
 }
 .newbieSection__project__title {
   text-align: center;
+  height: 10%;
 }
 .newbieSection__project__link {
   color: lightblue;
@@ -34,8 +34,7 @@
   padding: 0.5em 1em;
   text-align: center;
   margin-top: 1rem;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 675px) {
