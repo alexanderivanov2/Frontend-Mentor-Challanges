@@ -10,7 +10,7 @@
         width: 80%;
         margin: 1em auto 0;
         border: 2px solid lightblue;
-        @include roundTopBorders();
+        border-radius: 5px;
         background-color: lightblue;
         color: white;
         display: flex;
@@ -30,6 +30,7 @@
         
         &__title {
             text-align: center;
+            height: 10%;
         }
 
         &__link {
@@ -39,7 +40,7 @@
             padding: 0.5em 1em;
             text-align: center;
             margin-top: 1rem;
-            @include roundTopBorders();
+            border-radius: 5px;
         }
     }
 }
