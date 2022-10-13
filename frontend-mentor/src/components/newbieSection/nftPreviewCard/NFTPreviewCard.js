@@ -3,6 +3,7 @@ import cardImg from './img/image-equilibrium.jpg';
 import ethIcon from './img/icon-ethereum.svg';
 import clockIcon from './img/icon-clock.svg';
 import creatorAvatar from './img/image-avatar.png';
+import viewIcon from './img/icon-view.svg';
 
 function NFTPreviewCard() {
     return (
@@ -10,6 +11,11 @@ function NFTPreviewCard() {
             <article className={styles.nftPreviewCard}>
                 <div className={styles.nftPreviewCard__imgWrapper}>
                     <img src={cardImg} alt="nft preview card img" className={styles.nftPreviewCard__imgWrapper__img}/>
+                    <div className={styles.nftPreviewCard__imgWrapper__iconWrapper}>
+                        
+                    </div>
+                    <img src={viewIcon} alt='view icon of eye' className={styles.nftPreviewCard__imgWrapper__icon}/>
+                   
                 </div>
                 <h2 className={styles.nftPreviewCard__nftName}>Equilibrium #3429</h2>
                 <p className={styles.nftPreviewCard__nftDescription}>Our Equilibrium collection promotes balance and calm.</p>
