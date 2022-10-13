@@ -30,7 +30,7 @@ function App() {
                 <Route path='/newbie/project-one' element={<ProductPreviewCard screenWidth={screenWidth}/>}/>
                 <Route path='/newbie/qr-code-component' element={<QRCodeComponent/>}/>
                 <Route path='/newbie/interactive-rating-component' element={<InteractiveRatingComponent/>}/>
-                <Route path='/newbie/ntf-preview-card' element={<NFTPreviewCard/>}/>
+                <Route path='/newbie/nft-preview-card' element={<NFTPreviewCard/>}/>
             </Routes>
         </BrowserRouter>
     );
