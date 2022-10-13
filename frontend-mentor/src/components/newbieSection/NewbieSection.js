@@ -10,11 +10,11 @@ function NewbieSection() {
             <section className={styles.newbieSection}>
                     <article className={styles.newbieSection__project}>
                         <div className={styles.newbieSection__project__imgDiv}>
-                            <img src={interactiveRatingIMG} alt="product preview card"/>
+                            <img src={interactiveRatingIMG} alt="nft preview card"/>
                         </div>
-                        <h2 className={styles.newbieSection__project__title}>Interactive Ratign Component</h2>
+                        <h2 className={styles.newbieSection__project__title}>NFT Preview Card</h2>
 
-                        <Link to='/newbie/ntf-preview-card'
+                        <Link to='/newbie/nft-preview-card'
                         className={styles.newbieSection__project__link}>Go To Project</Link>
                     </article>
                     <article className={styles.newbieSection__project}>
