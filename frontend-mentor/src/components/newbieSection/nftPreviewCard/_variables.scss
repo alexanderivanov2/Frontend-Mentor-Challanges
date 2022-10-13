@@ -10,20 +10,15 @@ $neutral-White: hsl(0, 0%, 100%);
 $font-size: 18px;
 $font-family: 'Outfit', sans-serif; 
 
-@function getFontWeight($type) {
-    @if ($type == 'low') {
-        @return 300;
-    } @else if ($type == 'medium') {
-        @return 400;
-    } @else {
-        @return 800;
-    }
-}
-
 @mixin layoutTags {
     display: flex;
     gap: 0.5rem;
     align-items: center;
     font-weight: 400;
     font-size: 0.90rem;
+}
+
+@mixin hoverEffect {
+    color: $primary-Cyan;
+    cursor: pointer;
 }

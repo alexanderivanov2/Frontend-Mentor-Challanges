@@ -8,15 +8,11 @@
     font-family: $font-family;
 }
 
-@mixin getBorder {
-    border: 3px solid red;
-}
-
 .nftPreviewCardPage {
-    @include getBorder();
     background-color: $neutral-Very-dark-blue-main-BG;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 .nftPreviewCard {
@@ -29,11 +25,43 @@
     &__imgWrapper {
         width: 100%;
         margin: 0 auto;
-        
-
+        position: relative;
         &__img {
             width: 100%;
             border-radius: 15px;
+        }
+
+        &__iconWrapper {
+            opacity: 0.7;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 99.5%;
+            border-radius: 19px;
+        }
+
+        &__icon {
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:hover img {
+            cursor: pointer;
+        }
+
+        &:hover &__icon {
+            opacity: 1;
+           
+        }
+
+        &:hover &__iconWrapper {
+            opacity: 0.5;
+            background-color: $primary-Cyan;
         }
     }
 
@@ -42,6 +70,10 @@
         color: $neutral-White;
         font-weight: 400;
         font-size: 1.4rem;
+
+        &:hover {
+            @include hoverEffect();
+        }
     }
 
     &__nftDescription {
@@ -85,6 +117,10 @@
 
         span {
             color: $neutral-White;
+
+            &:hover {
+                @include hoverEffect();
+            }
         }
     }
 }
@@ -93,5 +129,20 @@
     .nftPreviewCard {
         width: 375px;
     }
-    
+}
+
+@media  screen and (min-width: 800px) {
+    .nftPreviewCard {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .nftPreviewCardPage {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
