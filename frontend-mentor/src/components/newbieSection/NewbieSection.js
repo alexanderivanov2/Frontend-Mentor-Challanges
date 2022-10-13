@@ -3,6 +3,7 @@ import styles from './NewbieSection.module.scss';
 import productPreviewCardIMG from './img/productPreviewCard.png';
 import qrCodeComponent from './img/qrCodeComponent.png';
 import interactiveRatingIMG from './img/interactive-rating-component.png';
+import nftPreviewCardImg from './img/nft-preview-card.png';
 
 function NewbieSection() {
     return (
@@ -10,7 +11,7 @@ function NewbieSection() {
             <section className={styles.newbieSection}>
                     <article className={styles.newbieSection__project}>
                         <div className={styles.newbieSection__project__imgDiv}>
-                            <img src={interactiveRatingIMG} alt="nft preview card"/>
+                            <img src={nftPreviewCardImg} alt="nft preview card"/>
                         </div>
                         <h2 className={styles.newbieSection__project__title}>NFT Preview Card</h2>
 
