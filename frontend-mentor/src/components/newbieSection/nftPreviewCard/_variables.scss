@@ -19,3 +19,11 @@ $font-family: 'Outfit', sans-serif;
         @return 800;
     }
 }
+
+@mixin layoutTags {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.90rem;
+}
