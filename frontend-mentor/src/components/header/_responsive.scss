@@ -15,7 +15,7 @@
 @media screen and (min-width: 675px) {
     .navigationBar {
         &__titleBox {
-            font-size: 7px;
+            font-size: 12px;
         }
     }
 }
@@ -24,5 +24,11 @@
     .headerNavigation {
         width: 80%;
         margin: 0 auto;
+    }
+
+    .navigationBar {
+        &__titleBox {
+            font-size: 14px;
+        }
     }
 }
