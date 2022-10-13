@@ -13,11 +13,12 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    padding-top: 2rem;
 }
 
 .nftPreviewCard {
     width: 90%;
-    margin: 2rem auto;
+    margin: 0 auto 2rem;
     background-color: $neutral-Very-dark-blue-card-BG;
     border-radius: 15px;
     padding: 1.5rem;
