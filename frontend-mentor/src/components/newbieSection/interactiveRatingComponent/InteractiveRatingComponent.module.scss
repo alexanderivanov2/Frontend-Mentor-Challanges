@@ -88,12 +88,14 @@ body {
             gap: 5%;
 
             &__rating {
+                display: flex;
+                justify-content: center;
                 background-color: darken($neutral-Medium-Grey, 30%);
                 color: $neutral-Medium-Grey;
                 font-weight: 700;
                 text-align: center;
                 width: 15%;
-                padding: 1rem;
+                padding: 0.5rem;
                 @include makeCircleBorder();
 
                 &:hover {
@@ -136,7 +138,7 @@ body {
     }
 
     .interactiveRating__box {
-        width: 400px;
+        width: 450px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -150,6 +152,10 @@ body {
 
     .interactiveRating__box__text__rating {
         padding-bottom: 0;
+    }
+
+    .interactiveRating__box__ratingsBox__rating {
+        padding: 1rem;
     }
 }
 
