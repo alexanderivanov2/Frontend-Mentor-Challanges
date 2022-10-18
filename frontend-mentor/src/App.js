@@ -5,7 +5,6 @@ import Header from "./components/header/Header";
 import InteractiveRatingComponent from "./components/newbieSection/interactiveRatingComponent/InteractiveRatingComponent";
 import NewbieSection from "./components/newbieSection/NewbieSection";
 import NFTPreviewCard from "./components/newbieSection/nftPreviewCard/NFTPreviewCard";
-
 import ProductPreviewCard from "./components/newbieSection/productPreviewCard/ProductPreviewCard";
 import QRCodeComponent from "./components/newbieSection/QRcodeComponent/QRCodeComponent";
 

@@ -3,7 +3,9 @@
         &__titleBox {
             width: 70px;
             aspect-ratio: 1/1;
-            font-size: 1rem;
+            h2 {
+                font-size: 18px;
+            }
         }
 
         &__burger {
@@ -13,9 +15,11 @@
 }
 
 @media screen and (min-width: 675px) {
-    .navigationBar {
-        &__titleBox {
-            font-size: 12px;
+    .headerNavigation{
+        .navigationBar {
+            &__titleBox h2{
+                font-size: 10px;
+            }
         }
     }
 }
@@ -24,11 +28,5 @@
     .headerNavigation {
         width: 80%;
         margin: 0 auto;
-    }
-
-    .navigationBar {
-        &__titleBox {
-            font-size: 14px;
-        }
     }
 }
