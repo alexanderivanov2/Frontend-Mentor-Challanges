@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import InteractiveRatingComponent from "./components/newbieSection/interactiveRatingComponent/InteractiveRatingComponent";
 import NewbieSection from "./components/newbieSection/NewbieSection";
 import NFTPreviewCard from "./components/newbieSection/nftPreviewCard/NFTPreviewCard";
+import OrderSummaryComponent from "./components/newbieSection/orderSummaryComponent/OrderSummaryComponent";
 import ProductPreviewCard from "./components/newbieSection/productPreviewCard/ProductPreviewCard";
 import QRCodeComponent from "./components/newbieSection/QRcodeComponent/QRCodeComponent";
 
@@ -30,6 +31,7 @@ function App() {
                 <Route path='/newbie/qr-code-component' element={<QRCodeComponent/>}/>
                 <Route path='/newbie/interactive-rating-component' element={<InteractiveRatingComponent/>}/>
                 <Route path='/newbie/nft-preview-card' element={<NFTPreviewCard/>}/>
+                <Route path='/newbie/order-summary-component' element={<OrderSummaryComponent/>}/>
             </Routes>
         </BrowserRouter>
     );
