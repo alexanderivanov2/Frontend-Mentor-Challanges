@@ -1,5 +1,137 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;800&display=swap");
-.title {
-  color: blue;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nftPreviewCardPage {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217deg, 54%, 11%);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.nftPreviewCard {
+  width: 90%;
+  margin: 0 auto 2rem;
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+.nftPreviewCard__imgWrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+.nftPreviewCard__imgWrapper__img {
+  width: 100%;
+  border-radius: 15px;
+}
+.nftPreviewCard__imgWrapper__iconWrapper {
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 99.5%;
+  border-radius: 19px;
+}
+.nftPreviewCard__imgWrapper__icon {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nftPreviewCard__imgWrapper:hover .nftPreviewCard__imgWrapper__icon {
+  opacity: 1;
+}
+.nftPreviewCard__imgWrapper:hover .nftPreviewCard__imgWrapper__iconWrapper {
+  opacity: 0.5;
+  background-color: hsl(178deg, 100%, 50%);
+}
+.nftPreviewCard__nftName {
+  margin-top: 1.5rem;
+  color: hsl(0deg, 0%, 100%);
   font-weight: 400;
+  font-size: 1.4rem;
+}
+.nftPreviewCard__nftName:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+.nftPreviewCard__nftDescription {
+  margin: 1.2rem auto;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+}
+.nftPreviewCard__wrapperTags {
+  display: flex;
+  flex: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.nftPreviewCard__wrapperTags__eth {
+  color: hsl(178deg, 100%, 50%);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.nftPreviewCard__wrapperTags__clock {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: hsl(215deg, 51%, 70%);
+}
+.nftPreviewCard__creatorWrapper {
+  padding-top: 1.5rem;
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+  color: hsl(215deg, 51%, 70%);
+  display: flex;
+  flex: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.nftPreviewCard__creatorWrapper img {
+  width: 15%;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+.nftPreviewCard__creatorWrapper span {
+  color: hsl(0deg, 0%, 100%);
+}
+.nftPreviewCard__creatorWrapper span:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 400px) {
+  .nftPreviewCard {
+    width: 375px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nftPreviewCard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nftPreviewCardPage {
+    width: 80%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=NFTPreviewCard.module.css.map */
