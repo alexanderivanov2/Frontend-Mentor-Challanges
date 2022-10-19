@@ -70,12 +70,14 @@ body {
   gap: 5%;
 }
 .interactiveRating__box__ratingsBox__rating {
+  display: flex;
+  justify-content: center;
   background-color: #363c45;
   color: hsl(216deg, 12%, 54%);
   font-weight: 700;
   text-align: center;
   width: 15%;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 50%;
 }
 .interactiveRating__box__ratingsBox__rating:hover {
@@ -108,7 +110,7 @@ body {
     position: relative;
   }
   .interactiveRating__box {
-    width: 400px;
+    width: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -120,6 +122,9 @@ body {
   }
   .interactiveRating__box__text__rating {
     padding-bottom: 0;
+  }
+  .interactiveRating__box__ratingsBox__rating {
+    padding: 1rem;
   }
 }
 @media screen and (min-width: 1400px) {
