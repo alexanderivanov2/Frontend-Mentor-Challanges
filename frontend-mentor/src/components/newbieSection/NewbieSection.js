@@ -4,47 +4,21 @@ import productPreviewCardIMG from './img/productPreviewCard.png';
 import qrCodeComponent from './img/qrCodeComponent.png';
 import interactiveRatingIMG from './img/interactive-rating-component.png';
 import nftPreviewCardImg from './img/nft-preview-card.png';
+import ChallangeCardComponent from "./ChallangeCardComponent";
+
+const challanges = [
+    {title: "Order Summary Component", linkTo: "/newbie/order-summary-component", img: nftPreviewCardImg},
+    {title: "NFT Preview Card", linkTo: "/newbie/nft-preview-card", img: nftPreviewCardImg },
+    {title: "Interactive Ratign Component", linkTo: "/newbie/interactive-rating-component", img: interactiveRatingIMG },
+    {title: "QR Code Component", linkTo: "/newbie/qr-code-component", img: qrCodeComponent },
+    {title: "Product Preview Card", linkTo: "/newbie/project-one", img: productPreviewCardIMG},
+];
 
 function NewbieSection() {
     return (
         <>
             <section className={styles.newbieSection}>
-                    <article className={styles.newbieSection__project}>
-                        <div className={styles.newbieSection__project__imgDiv}>
-                            <img src={nftPreviewCardImg} alt="nft preview card"/>
-                        </div>
-                        <h2 className={styles.newbieSection__project__title}>NFT Preview Card</h2>
-
-                        <Link to='/newbie/nft-preview-card'
-                        className={styles.newbieSection__project__link}>Go To Project</Link>
-                    </article>
-                    <article className={styles.newbieSection__project}>
-                        <div className={styles.newbieSection__project__imgDiv}>
-                            <img src={interactiveRatingIMG} alt="product preview card"/>
-                        </div>
-                        <h2 className={styles.newbieSection__project__title}>Interactive Ratign Component</h2>
-
-                        <Link to='/newbie/interactive-rating-component'
-                        className={styles.newbieSection__project__link}>Go To Project</Link>
-                    </article>
-                    <article className={styles.newbieSection__project}>
-                        <div className={styles.newbieSection__project__imgDiv}>
-                            <img src={qrCodeComponent} alt="QR code component"/>
-                        </div>
-                        <h2 className={styles.newbieSection__project__title}>QR Code Component</h2>
-
-                        <Link to='/newbie/qr-code-component'
-                        className={styles.newbieSection__project__link}>Go To Project</Link>
-                    </article>
-                    <article className={styles.newbieSection__project}>
-                        <div className={styles.newbieSection__project__imgDiv}>
-                            <img src={productPreviewCardIMG} alt="product preview card"/>
-                        </div>
-                        <h2 className={styles.newbieSection__project__title}>Product Preview Card</h2>
-
-                        <Link to='/newbie/project-one'
-                        className={styles.newbieSection__project__link}>Go To Project</Link>
-                    </article>
+                {challanges.map(challange => <ChallangeCardComponent data={challange} key={challange.title}/>)}
             </section>
         </>
     )
