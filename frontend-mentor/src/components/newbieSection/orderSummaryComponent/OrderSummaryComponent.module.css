@@ -69,7 +69,7 @@
   margin: 1rem auto;
   padding: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 700;
   background-color: hsl(245deg, 75%, 52%);
@@ -81,9 +81,15 @@
   margin: 1rem auto;
   padding: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 700;
   background-color: hsl(225deg, 100%, 98%);
   color: hsl(224deg, 23%, 55%);
+}
+
+@media screen and (min-width: 400px) {
+  .orderSummary {
+    width: 380px;
+  }
 }/*# sourceMappingURL=OrderSummaryComponent.module.css.map */
