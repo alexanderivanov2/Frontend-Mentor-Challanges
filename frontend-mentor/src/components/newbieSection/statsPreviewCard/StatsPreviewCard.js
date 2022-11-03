@@ -6,12 +6,16 @@ function StatsPreviewCard() {
     return (
         <section className={styles.previewCardPage}>
             <article className={styles.previewCard}>
-                {window.screen.width < 750 
-                    ? 
-                        <img className={styles.previewCard__img} src={imgMobile} alt='stats preview card Mobile'/>
-                    :
-                        <img className={styles.previewCard__img} src={imgDesktop} alt='stats preview card Desktop'/>
-                }
+
+                <div className={styles.previewCard__imageWrapper}>
+                    {window.screen.width < 750 
+                        ? 
+                            <img className={styles.previewCard__imageWrapper__img} src={imgMobile} alt='stats preview card Mobile'/>
+                        :
+                            <img className={styles.previewCard__imageWrapper__img} src={imgDesktop} alt='stats preview card Desktop'/>
+                    }
+                </div>
+                
 
                 <h2 className={styles.previewCard__header}>Get <span>insights</span> that help your business grow.</h2>
                 <p className={styles.previewCard__description}>
