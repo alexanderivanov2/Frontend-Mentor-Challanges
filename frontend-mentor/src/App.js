@@ -8,6 +8,7 @@ import NFTPreviewCard from "./components/newbieSection/nftPreviewCard/NFTPreview
 import OrderSummaryComponent from "./components/newbieSection/orderSummaryComponent/OrderSummaryComponent";
 import ProductPreviewCard from "./components/newbieSection/productPreviewCard/ProductPreviewCard";
 import QRCodeComponent from "./components/newbieSection/QRcodeComponent/QRCodeComponent";
+import StatsPreviewCard from "./components/newbieSection/statsPreviewCard/StatsPreviewCard";
 
 function App() {
     const [screenWidth, setScreenWidth] = useState(window.screen.width);
@@ -32,6 +33,7 @@ function App() {
                 <Route path='/newbie/interactive-rating-component' element={<InteractiveRatingComponent/>}/>
                 <Route path='/newbie/nft-preview-card' element={<NFTPreviewCard/>}/>
                 <Route path='/newbie/order-summary-component' element={<OrderSummaryComponent/>}/>
+                <Route path='/newbie/stats-preview-card' element={<StatsPreviewCard/>}/>
             </Routes>
         </BrowserRouter>
     );

@@ -8,12 +8,13 @@ import orderSummaryImg from "./img/orderSummary.png";
 import ChallangeCardComponent from "./ChallangeCardComponent";
 
 const challanges = [
+    {title: "State Preview Card", linkTo: "/newbie/stats-preview-card", img: productPreviewCardIMG},
     {title: "Order Summary Component", linkTo: "/newbie/order-summary-component", img: orderSummaryImg},
     {title: "NFT Preview Card", linkTo: "/newbie/nft-preview-card", img: nftPreviewCardImg },
     {title: "Interactive Ratign Component", linkTo: "/newbie/interactive-rating-component", img: interactiveRatingIMG },
     {title: "QR Code Component", linkTo: "/newbie/qr-code-component", img: qrCodeComponent },
     {title: "Product Preview Card", linkTo: "/newbie/project-one", img: productPreviewCardIMG},
-    {title: "State Preview Card", linkTo: "/newbie/project-one", img: productPreviewCardIMG}
+
 ];
 
 function NewbieSection() {
