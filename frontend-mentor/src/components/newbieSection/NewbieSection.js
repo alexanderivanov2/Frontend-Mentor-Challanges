@@ -13,6 +13,7 @@ const challanges = [
     {title: "Interactive Ratign Component", linkTo: "/newbie/interactive-rating-component", img: interactiveRatingIMG },
     {title: "QR Code Component", linkTo: "/newbie/qr-code-component", img: qrCodeComponent },
     {title: "Product Preview Card", linkTo: "/newbie/project-one", img: productPreviewCardIMG},
+    {title: "State Preview Card", linkTo: "/newbie/project-one", img: productPreviewCardIMG}
 ];
 
 function NewbieSection() {
